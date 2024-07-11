@@ -1,0 +1,303 @@
+/* = import font
+**********************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+/* = body
+**********************************************************************/
+body{
+	overflow: hidden;
+}
+
+/* = background
+**********************************************************************/
+.background-div {
+	background-image: url('../images/background1.png'); 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	overflow: hidden;
+
+}
+
+/* = frame
+**********************************************************************/
+
+iframe {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+	position: absolute;
+
+}
+
+
+.fr{
+	z-index:3;
+	position: absolute;
+	height: 42%;
+	width: 15%;
+	/*margin-top: 150px;*/
+	background-color: #800000;
+	overflow: auto;
+	border-radius: 7px;
+	display: none;
+	opacity: 92%;
+
+
+
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.fr p{
+	margin-top: 5px;
+}
+
+.visible {
+    display: block;
+}
+
+/* MODAL
+/* = modal
+**********************************************************************/
+.m {
+	height: 60%;
+	width: 100%;
+	align-items: center; /* Vertically center the content */
+	justify-content: center; /* Horizontally center the content */
+	border-radius: 7px;
+  }
+  
+  .m-title {
+	background-color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px; /* Add padding to all sides */
+	font-family: 'Arimo', sans-serif;
+	color: rgb(0, 0, 0);
+	text-align: center; /* Center the text horizontally */
+  }
+  
+  .m-content {
+	font-size: 16px;
+	font-family: 'Arimo', sans-serif;
+	color: rgb(255, 255, 255);
+	text-align: center; /* Center the text horizontally */
+  }
+  
+  .m-content p {
+	margin: 0;
+	padding-top: 2px;
+	text-indent: 2px;
+	letter-spacing: 0px;
+	line-height: 1.1em;
+	padding-left: 20px; /* Add left padding */
+	padding-right: 20px; /* Add left padding */
+  }
+  
+  .m-contain-img {
+	float: left;
+  }
+  
+  .m-contain-img img {
+	height: auto;
+	width: 230px;
+	padding: 20px;
+	padding-left: 28px; /* Add left padding */
+  }
+
+/* = header
+**********************************************************************/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #800000;
+    height: 50px;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    color: white;
+    z-index: 10;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 0;
+}
+
+header p {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.break {
+    font-size: 16px;
+    margin-left: 67px;
+    margin-right: 62px;
+}
+
+header img {
+    margin-right: 20px;
+    height: 35px;
+    width: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+
+.info-icon{
+	cursor: pointer;
+}
+
+.info-icon:hover{
+	transform: scale(1.07);
+}
+
+
+
+footer {
+	background-color: #800000; /* Red background color */
+	color: #fff; /* Text color */
+	padding: 0px 0; /* Padding top and bottom */
+	text-align: center; /* Center align text */
+	position: fixed; /* Fixed position at the bottom */
+    height: 25px;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+	bottom: 0; /* Stick to the bottom */
+	z-index: 1000; /* Ensure it's above other content */
+}
+footer p {
+	font-size: 14px;
+    padding: 5px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* = contain-map
+**********************************************************************/
+.contain-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the container height to the full viewport height */
+}
+
+.damap {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    max-height: 100%; /* Ensure the image does not exceed its container */
+}
+
+
+.location {
+	-ms-transition: transform .12s ease-in-out;
+ 	-webkit-transition: transform .12s ease-in-out;
+
+}
+
+header{
+	-ms-transition: transform .12s ease-in-out;
+ 	-webkit-transition: transform .12s ease-in-out;
+}
+
+/* = location 
+**********************************************************************/
+.location {
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+
+}
+
+.location :hover{
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}
+
+#b-building-main{
+	top: 630px;
+	left: 825px;
+}
+
+#b-park{
+	top: 445px;
+	left: 1020px;
+}
+
+#b-chapel{
+	top: 640px;
+	left: 972px;
+}
+
+#b-obelisk{
+	top: 335px;
+	left: 1040px;
+}
+
+#b-gymnasium{
+	top: 150px;
+	left: 1290px;
+}
+
+#b-shrine{
+	top: 410px;
+	left: 1113px;
+}
+
+#b-library{
+	top: 186px;
+	left: 800px;
+}
+
+#b-oval{
+	top: 550px;
+	left: 1280px;
+}
+
+#b-station-ferry{
+	top: 739px;
+	left: 678px;
+}
+
+#b-tahanan-alumni{
+	top: 120px;
+	left: 1000px;
+}
+
+#b-river{
+	top: 430px;
+	left: 439px;
+}
+#b-office-visitor{
+	top: 300px;
+	left: 1373px;
+}
+#b-pylon{
+	top: 320px;
+	left: 1420px;
+}
+#b-lagoon{
+	top: 300px;
+	left: 890px;
+}
+#b-building-charlie{
+	top:320px;
+	left: 627px;
+}
+
+
+/* CSS for image maps */
+area {
+    outline: 10px solid transparent; /* Transparent border by default */
+    transition: outline-color 0.3s; /* Smooth transition for border color change */
+}
+
+area:hover {
+    outline-color: #fffb00;
+}
+
